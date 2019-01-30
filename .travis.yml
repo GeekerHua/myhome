@@ -12,7 +12,7 @@ script:
   - yarn build
 
 after_script:
-  - cp ./CNAME ./build
+  - echo ${CNAME} > ./build/CNAME
   - cp ./README.md ./build
   - cd build
   - git init
